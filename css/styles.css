@@ -1,0 +1,182 @@
+/*DEFINE SITE VARIABLES */
+html{
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --primary-color: #AC4500;
+    --dark-color: #222729;
+    --quote-color: #22272962;
+    --white: white;
+    --black: black;
+    --primary-font: "Roboto", sans-serif;
+    /* desktop sizes */
+    --h1-font-size: 4rem;
+ }
+/****** MOBILE SITE VARIABLES ******/
+@media (max-width: 850px) {
+  :root {
+    --h1-font-size: 2rem;
+  }
+}
+ body {
+    background-color: var(--white);
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    color: var(--dark-color);
+ }
+ blockquote{
+   font-size: 4.5rem;
+   color: var(--quote-color);
+   font-family: "ratiomodern", serif;
+   font-weight: 400;
+   line-height: 103%;
+   font-style: italic;
+   text-align: center;
+ }
+ button{
+    border: 1px solid white;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 1rem;
+ }
+ cite{
+   font-size: 1.25rem;
+   text-align: center;
+ }
+ figure{
+   text-align: center;
+ }
+ figcaption{
+   color: var(--quote-color);
+   font-size: 2rem;
+   font-style: italic;
+   transform: translateX(10%);
+   margin-top: 2rem;
+ }
+ footer{
+   background-color: var(--primary-color);
+   text-align: center;
+   padding: 12px;
+   margin-top:32px;
+ }
+ form{
+   display: block;
+   text-align: center;
+ }
+ h4.day{
+    color: yellow;
+ }
+ header {
+    background-color: var(--black);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0; /* Add this line to remove margin */
+    color: var(--white);
+    padding: 0px;
+ }
+ section{
+    background-color: var(--dark-color);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5%;
+ }
+ /* Navigation Styles */
+ nav {
+    background-color: black;
+    padding: 12px;
+ }
+ .navbar {
+    background-color: var(--black);
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+ }
+ .navbar-brand {
+    background-color: var(--black);
+ }
+ .navbar-black {
+    background-color: black !important;
+ }
+ /* End Navigation Styles */
+ .black-bg{
+    background-color: var(--dark-color);
+    padding: 0px;
+ }
+ .center{
+   margin: auto;
+   text-align: center;
+ }
+ .display-paragraph{
+    position: relative;
+    color: white;
+ }
+ .display-paragraph::before{
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    content: "";
+    width: 80px;
+    height: 6px;
+    background-color: var(--primary-color);
+ }
+ .primary-bg{
+    background-color: var(--primary-color);
+ }
+ .rocket{
+    margin-top: -45%;
+    padding-bottom:62px;
+    text-align: center;
+    margin-bottom: 0px;
+ }
+ .rocket > img {
+    width: 25%;
+ }
+ .two-column-card{
+    border: 1px solid var(--dark-color);
+    filter: drop-shadow()
+ }
+ #hero{
+    display: block;
+    background-image: url("../images/photo_kid.png");
+    background-size: cover;
+    aspect-ratio: 16/10;
+    padding-top: 25%;
+ }
+ #hero > h1 {
+    position: relative;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: var(--h1-font-size);
+    color: var(--white);
+    width: 55%;
+    margin: auto 0px 0px auto;
+    padding: 35px;
+ }
+ #hero >h1::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 100%;
+    background: var(--primary-color);
+    transform: skew(-15deg);
+    transform-origin:top;
+  }
+  #hero > h2 {
+    position: relative;
+    background-color: var(--dark-color);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--white);
+    width: 35%;
+    margin: auto 0px auto auto;
+    padding: 25px;
+ }

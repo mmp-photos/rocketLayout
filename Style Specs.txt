@@ -1,0 +1,5 @@
+Ratio Modern
+font-family: "ratiomodern", serif;
+font-weight: 400;
+font-style: italic;
+
